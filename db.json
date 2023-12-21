@@ -1,0 +1,20 @@
+{
+  "Signup": [
+    {
+      "fname": "jayesh",
+      "lname": "jayesh",
+      "email": "ja",
+      "phone": 12346,
+      "password": "123",
+      "id": 1
+    },
+    {
+      "fname": "Mayur",
+      "lname": "Rathod",
+      "email": "mayur.rathod",
+      "phone": 9033463336,
+      "password": "rathodm",
+      "id": 2
+    }
+  ]
+}
