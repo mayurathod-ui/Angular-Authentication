@@ -1,0 +1,31 @@
+$primary: #6fbecb;
+$secondary:#799dbe;
+$box-title:#E6E2E2;
+$gray-font-100:#444444;
+$gray-2:#949494;
+$gray-3:#a7998a;
+$text-white: #FFFFFF;
+$text-black:#000000;
+$label-color: #468691;
+$input-border:#ade9f3;
+
+// image path
+$assetsPath: ".../../../assets/images";
+
+// header section
+$light-rgb: 248,249,250;
+$bg-opacity:1;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+
+$small-phone: "only screen and (max-width: 479.98px)";
+$phone: "only screen and (min-width: 480px) and (max-width: 767.98px)";
+
+
+
+
+

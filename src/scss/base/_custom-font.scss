@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'FiraSans-Book';
+    src: url('../base/fonts/firasans_book-webfont.woff2') format('woff2'),
+        url('../base/fonts/firasans_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSans-Light';
+    src: url('../base/fonts/firasans-light-webfont.woff2') format('woff2'),
+        url('../base/fonts/firasans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('../base/fonts/firasans-regular-webfont.woff2') format('woff2'),
+        url('../base/fonts/firasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('../base/fonts/DejaVuSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DejaVuSans Bold';
+    src: url('../base/fonts/FiraSans-Bold.ttf') format('truetype');
+}
+
+.ff-firasans-book{ font-family: 'FiraSans-Book';}
+.ff-firasans-light{  font-family: 'FiraSans-Light';}
+.ff-firasans-regular{  font-family: 'FiraSans-Regular';}
+.ff-dejavu-sans{ font-family: 'DejaVu Sans';}
+.ff-dejavu-bold{font-family: 'DejaVuSans Bold';}
+
+$font-size-list: 14 16 18 20 22 24 26 28 30 32 37;
+@each $value in $font-size-list {
+  .font-size-#{$value} {
+    font-size: rfs-value($value + px) !important;
+  }
+}

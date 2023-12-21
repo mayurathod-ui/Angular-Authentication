@@ -1,0 +1,24 @@
+$max: 100;
+  $offset: 1;
+  $unit: 'px'; // Feel free to change the unit.
+  @mixin list-loop($className, $styleName) {
+    $i: 0;
+    @while $i <= $max {
+      #{$className + $i} {
+        #{$styleName}: #{$i + $unit};
+      }
+      $i: $i + $offset;
+    }
+  }
+  // Margins
+  @include list-loop('.margin-top-', 'margin-top');
+  @include list-loop('.margin-right-', 'margin-right');
+  @include list-loop('.margin-bottom-', 'margin-bottom');
+  @include list-loop('.margin-left-', 'margin-left');
+  @include list-loop('.margin-', 'margin');
+  // Paddings
+  @include list-loop('.padding-top-', 'padding-top');
+  @include list-loop('.padding-right-', 'padding-right');
+  @include list-loop('.padding-bottom-', 'padding-bottom');
+  @include list-loop('.padding-left-', 'padding-left');
+  @include list-loop('.padding-', 'padding');

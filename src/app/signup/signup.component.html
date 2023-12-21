@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="login_box">
+                <div class="login_warp">
+                    <h4>Signup here...</h4>
+                    <form class="mt-3" [formGroup]="signup" (ngSubmit)="signupdata(signup)">
+                        <div class="mb-3">
+                            <label for="fname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="fname" 
+                                formControlName="fname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lname" 
+                                formControlName="lname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" 
+                                formControlName="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="number" class="form-control" id="phone" 
+                                formControlName="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Signuppassword" class="form-label">password</label>
+                            <input type="password" class="form-control" id="Signuppassword" 
+                                formControlName="password">
+                        </div>
+                        <div class="mb-3">
+                            <span>Go To Login Page <a [routerLink]="['/login']">Login</a></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
